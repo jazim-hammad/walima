@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/bismillah.png" />
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("XalD9hjeT-TMCJKD4");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="flower"><img src="./assets/main.png" alt="flower" /></div>
+    <section id="Themes">
+      <div class="line2"></div>
+      <h2>- Events & Themes -</h2>
+      <div class="events">
+        <section class="Walima">
+          <p>
+            Event name: Walima <img src="./assets/flower-bouquet.png" alt="" />
+          </p>
+          <p>Theme: Formals / Gowns - Pastel Colors</p>
+          <p>Date: 24th December 2023</p>
+          <p>Venue: Al Bustan Hotel</p>
+          <p>Time: 7pm</p>
+        </section>
+      </div>
+      <div class="line2"></div>
+      <div class="Confirmation">
+        <h1>Confirmation</h1>
+        <div class="name">
+          <h5 for="name"></h5>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+
+        <div class="people">
+          <h5 for="people"></h5>
+          <input
+            type="number"
+            class="form-control"
+            id="people"
+            placeholder="Enter the number of attendees"
+          />
+        </div>
+        <button class="button" onclick="sendMail()">Confirm Attendance</button>
+      </div>
+    </section>
+  </body>
+</html>
